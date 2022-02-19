@@ -23,7 +23,6 @@ include = [
 python = "^3.8.12"
 spacy = "^3.2.2"
 ja-ginza = "^5.1.0"
-ja-ginza-dict = "*"
 Janome = "^0.4.1"
 mojimoji = "^0.0.12"
 emoji = "^0.6.0"
