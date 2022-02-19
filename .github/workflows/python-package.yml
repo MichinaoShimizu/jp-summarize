@@ -1,0 +1,62 @@
+name: Python CI
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "src/**"
+      - "tests/**"
+      - ".github/**"
+      - "poetry.lock"
+      - "poetry.toml"
+      - "pyproject.toml"
+      - "tox.ini"
+  pull_request:
+    branches: [ main ]
+    paths:
+      - "src/**"
+      - "tests/**"
+      - ".github/**"
+      - "poetry.lock"
+      - "poetry.toml"
+      - "pyproject.toml"
+      - "tox.ini"
+jobs:
+  test:
+    name: Python ${{ matrix.python-version }} on ${{ matrix.platform }}
+    runs-on: ${{ matrix.platform }}
+    env:
+      USING_COVERAGE: "3.8"
+    strategy:
+      matrix:
+        platform: [macos-latest]
+        python-version: ["3.8", "3.9", "3.10"]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install poetry
+        run: python -m pip install poetry
+      - name: Poetry install
+        run: poetry install
+      - name: Run tox
+        run: poetry run tox
+  package:
+    name: Build package
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.8"
+      - name: Install poetry
+        run: python -m pip install poetry
+      - name: Build package
+        run: poetry build
+      - name: Show result
+        run: ls -l dist
+      - name: Install package
+        run: python -m pip install .

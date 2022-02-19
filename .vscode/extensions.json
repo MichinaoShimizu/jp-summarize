@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "donjayamanne.python-extension-pack",
+    "mgesbert.python-path",
+    "himanoa.python-autopep8",
+    "iliazeus.vscode-ansi"
+  ],
+  "unwantedRecommendations": [
+    "tht13.python"
+  ]
+}
