@@ -1,6 +1,6 @@
-# boilerplate.poetry.py
+# sumy-action
 
-[![Python CI](https://github.com/MichinaoShimizu/boilerplate.poetry.py/actions/workflows/python-package.yml/badge.svg)](https://github.com/MichinaoShimizu/boilerplate.poetry.py/actions/workflows/python-package.yml)
+[![Python CI](https://github.com/MichinaoShimizu/sumy-action/actions/workflows/python-package.yml/badge.svg)](https://github.com/MichinaoShimizu/sumy-action/actions/workflows/python-package.yml)
 
 ## Requirements
 
@@ -9,7 +9,7 @@
 ## pip install
 
 ```bash
-pip install -U git@github.com:MichinaoShimizu/boilerplate.poetry.py.git
+pip install -U git@github.com:MichinaoShimizu/sumy-action.git
 ```
 
 ## For contributor
