@@ -1,9 +1,11 @@
-import src
+import sys
+
+from src.processor import SumyActionProcessor
 
 
-def main() -> None:
-    print(src.__version__)
-    exit(0)
+def main() -> int:
+    [print(text) for text in SumyActionProcessor(sys.stdin.readline()).run()]
+    return 0
 
 
 if __name__ == "__main__":

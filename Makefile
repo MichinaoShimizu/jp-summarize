@@ -4,7 +4,7 @@ install:
 	poetry install
 	poetry run pre-commit install
 
-run: install
+run:
 	poetry run start
 
 build:
@@ -18,5 +18,6 @@ clean:
 	@-rm -R dist .tox .mypy_cacche .coverage .venv poetry.lock
 
 update:
+	pip install --upgrade pip
 	poetry self update
 	poetry update

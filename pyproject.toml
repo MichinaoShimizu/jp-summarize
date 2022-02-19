@@ -3,13 +3,13 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "boilerplate.poetry.py"
+name = "sumy-action"
 version = "0.1.0"
 description = ""
 authors = ["MichinaoShimizu <shimizu.michinao@gmail.com>"]
 license = ""
 readme = "README.md"
-repository = "https://github.com/MichinaoShimizu/boilerplate.poetry.py"
+repository = "https://github.com/MichinaoShimizu/sumy-action"
 packages = [
     { include = "src", from = "." }
 ]
@@ -21,10 +21,15 @@ include = [
 
 [tool.poetry.dependencies]
 python = "^3.8.12"
-requests = "^2.27.1"
-beautifulsoup4 = "^4.10.0"
-pydantic = "^1.9.0"
-joblib = "^1.1.0"
+spacy = "*"
+ja-ginza = "^5.1.0"
+ja-ginza-dict = "^3.1.0"
+Janome = "^0.4.1"
+mojimoji = "^0.0.12"
+emoji = "^0.6.0"
+neologdn = "*"
+sumy = "*"
+tinysegmenter = "^0.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.0"
