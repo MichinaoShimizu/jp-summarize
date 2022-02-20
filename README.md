@@ -9,5 +9,5 @@
 ## pip install
 
 ```bash
-pip install -U git@github.com:MichinaoShimizu/jp-summarize.git
+pip install -U git+ssh://git@github.com/MichinaoShimizu/jp-summarize.git
 ```
