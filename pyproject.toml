@@ -3,13 +3,13 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "sumy-action"
+name = "jp-summarize"
 version = "0.1.0"
 description = ""
 authors = ["MichinaoShimizu <shimizu.michinao@gmail.com>"]
 license = ""
 readme = "README.md"
-repository = "https://github.com/MichinaoShimizu/sumy-action"
+repository = "https://github.com/MichinaoShimizu/jp-summarize"
 packages = [
     { include = "src", from = "." }
 ]
