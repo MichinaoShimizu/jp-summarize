@@ -1,6 +1,6 @@
-# sumy-action
+# jp-summarize
 
-[![Python CI](https://github.com/MichinaoShimizu/sumy-action/actions/workflows/python-package.yml/badge.svg)](https://github.com/MichinaoShimizu/sumy-action/actions/workflows/python-package.yml)
+[![Python CI](https://github.com/MichinaoShimizu/jp-summarize/actions/workflows/python-package.yml/badge.svg)](https://github.com/MichinaoShimizu/jp-summarize/actions/workflows/python-package.yml)
 
 ## Requirements
 
@@ -9,7 +9,7 @@
 ## pip install
 
 ```bash
-pip install -U git@github.com:MichinaoShimizu/sumy-action.git
+pip install -U git@github.com:MichinaoShimizu/jp-summarize.git
 ```
 
 ## For contributor
