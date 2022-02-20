@@ -1,6 +1,6 @@
 import sys
 
-from src.processor import SumyActionProcessor
+from jp_summarize.processor import SumyActionProcessor
 
 
 def main() -> int:

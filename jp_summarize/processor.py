@@ -8,7 +8,7 @@ from sumy.nlp.tokenizers import Tokenizer
 from sumy.parsers.plaintext import PlaintextParser
 from sumy.summarizers.lex_rank import LexRankSummarizer
 
-from src.normalizer.ja import JapaneseNormalizer
+from jp_summarize.normalizer.ja import JapaneseNormalizer
 
 
 class SumyActionProcessor:

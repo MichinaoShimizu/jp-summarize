@@ -1,6 +1,6 @@
-# jp-summarize
+# jp_summarize
 
-[![Python CI](https://github.com/MichinaoShimizu/jp-summarize/actions/workflows/python-package.yml/badge.svg)](https://github.com/MichinaoShimizu/jp-summarize/actions/workflows/python-package.yml)
+[![Python CI](https://github.com/MichinaoShimizu/jp-summarize/actions/workflows/python-package.yml/badge.svg)](https://github.com/MichinaoShimizu/jp_summarize/actions/workflows/python-package.yml)
 
 ## Requirements
 
@@ -9,5 +9,5 @@
 ## pip install
 
 ```bash
-pip install -U git+ssh://git@github.com/MichinaoShimizu/jp-summarize.git
+pip install -U git+ssh://git@github.com/MichinaoShimizu/jp_summarize.git
 ```
