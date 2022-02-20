@@ -33,4 +33,4 @@ class SumyActionProcessor:
         summarizer = LexRankSummarizer()
         summarizer.stop_words = [" "]
         summary = summarizer(parser.document, int(len(corpus) / 10 * 3))
-        return [normalized[corpus.index(s.__str__())] for s in summary]
+        return [normalized[corpus.index(s.__str__())] + "。" for s in summary]
