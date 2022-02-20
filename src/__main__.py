@@ -4,7 +4,7 @@ from src.processor import SumyActionProcessor
 
 
 def main() -> int:
-    [print(text) for text in SumyActionProcessor(sys.stdin.readline()).run()]
+    [print(s) for s in SumyActionProcessor(sys.stdin.read()).run()]
     return 0
 
 
