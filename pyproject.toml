@@ -36,6 +36,7 @@ tox = "^3.24.5"
 flake8 = "^4.0.1"
 pre-commit = "^2.17.0"
 black = "^22.1.0"
+mypy = "^0.931"
 
 [tool.poetry.scripts]
 start = "jp_summarize.__main__:main"

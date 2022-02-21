@@ -14,10 +14,10 @@ test:
 	poetry run tox
 
 clean:
-	@find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
-	@-rm -R dist .tox .mypy_cacche .coverage .venv poetry.lock
+	find . | grep -E "(__pycache__|\.pyc|\.pyo$$)" | xargs rm -rf
+	-rm -R dist .tox .mypy_cacche .coverage .venv poetry.lock
 
 update:
-	pip install --upgrade pip
+	python -m pip install --upgrade pip
 	poetry self update
 	poetry update

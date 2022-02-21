@@ -15,5 +15,6 @@
   ],
   "python.linting.flake8Enabled": true,
   "python.linting.lintOnSave": true,
+  "python.linting.mypyEnabled": true,
   "python.linting.pylintEnabled": false
 }
